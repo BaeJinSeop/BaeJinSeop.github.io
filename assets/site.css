@@ -440,27 +440,7 @@ a:focus-visible {
   line-height: 1.8;
 }
 
-.coming-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 17px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: rgba(26, 32, 48, 0.74);
-  color: var(--muted);
-  font-size: 0.82rem;
-  font-weight: 650;
-  cursor: default;
-}
 
-.coming-badge::before {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--accent);
-  content: "";
-}
 
 .showcase {
   padding: var(--section-space) 0;
