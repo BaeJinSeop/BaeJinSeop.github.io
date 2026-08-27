@@ -831,6 +831,7 @@ a:focus-visible {
 
   .product-icon {
     width: 62px;
+    height: 62px;
     border-radius: 17px;
   }
 
