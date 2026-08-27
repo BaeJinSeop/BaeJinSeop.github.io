@@ -18,9 +18,15 @@
   <nav class="site-nav" aria-label="주요 탐색">
     <a class="brand-link" href="/here-then/" aria-label="여기, 그때 홈">
       <img src="assets/appicon.png" alt="" width="512" height="512" loading="lazy">
-      <span>여기, 그때</span>
+      <span data-i18n="brand">여기, 그때</span>
     </a>
-    <a class="back-link" href="/">Jinseop Bae ↗</a>
+    <div class="nav-side">
+      <div class="lang-toggle" role="group" aria-label="언어 선택">
+        <button type="button" data-lang="ko" aria-pressed="true">KO</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="back-link" href="/">Jinseop Bae ↗</a>
+    </div>
   </nav>
 
   <main class="here-main">
@@ -29,14 +35,14 @@
         <div class="hero-product">
           <img class="hero-icon" src="assets/appicon.png" alt="여기, 그때 앱 아이콘" width="512" height="512" loading="lazy">
           <div>
-            <h1 id="hero-title">여기, 그때</h1>
-            <p>Here, Then</p>
+            <h1 id="hero-title" data-i18n="heroName">여기, 그때</h1>
+            <p data-i18n="heroNameSub">Here, Then</p>
           </div>
         </div>
 
-        <p class="hero-copy">사진은 앨범이 아니라,<br><em>살아온 장소</em>의 기록입니다.</p>
-        <p class="hero-subcopy">보관함을 기기 안에서만 분석해 당신이 어디에서 어떤 시간을 살아왔는지 지도 한 장에 펼칩니다.</p>
-        <span class="coming-badge" aria-disabled="true">App Store에서 곧 만나요</span>
+        <p class="hero-copy" data-i18n-html="heroCopy">사진은 앨범이 아니라,<br><em>살아온 장소</em>의 기록입니다.</p>
+        <p class="hero-subcopy" data-i18n="heroSub">보관함을 기기 안에서만 분석해 당신이 어디에서 어떤 시간을 살아왔는지 지도 한 장에 펼칩니다.</p>
+        <span class="coming-badge" aria-disabled="true" data-i18n="badge">App Store에서 곧 만나요</span>
       </div>
     </section>
 
@@ -44,9 +50,9 @@
       <div class="showcase-header">
         <div>
           <p class="section-label">Your life, on one map</p>
-          <h2 id="showcase-title">흩어진 사진이<br>한 장의 지도가 됩니다.</h2>
+          <h2 id="showcase-title" data-i18n-html="showcaseTitle">흩어진 사진이<br>한 장의 지도가 됩니다.</h2>
         </div>
-        <p>어디에 머물렀고, 언제 다시 찾았는지. 장소와 시간 사이에 숨어 있던 나만의 이야기를 발견하세요.</p>
+        <p data-i18n="showcaseDesc">어디에 머물렀고, 언제 다시 찾았는지. 장소와 시간 사이에 숨어 있던 나만의 이야기를 발견하세요.</p>
       </div>
 
       <div class="phone-scroll" aria-label="여기, 그때 앱 화면 미리보기">
@@ -72,25 +78,25 @@
       <div class="features">
         <header class="features-header">
           <p class="section-label">Four ways to remember</p>
-          <h2 id="features-title">기억을 다시 만나는<br>네 가지 방법</h2>
+          <h2 id="features-title" data-i18n-html="featuresTitle">기억을 다시 만나는<br>네 가지 방법</h2>
         </header>
 
         <div class="feature-grid">
           <article class="feature-card">
-            <h3>기억 지도</h3>
-            <p>사진 속 위치를 모아 내가 살아온 장소를 지도 위에 펼칩니다.</p>
+            <h3 data-i18n="f1t">기억 지도</h3>
+            <p data-i18n="f1d">사진 속 위치를 모아 내가 살아온 장소를 지도 위에 펼칩니다.</p>
           </article>
           <article class="feature-card">
-            <h3>시간 슬라이더</h3>
-            <p>연도와 기간을 움직이며 시간에 따라 달라진 나의 반경을 돌아봅니다.</p>
+            <h3 data-i18n="f2t">시간 슬라이더</h3>
+            <p data-i18n="f2d">연도와 기간을 움직이며 시간에 따라 달라진 나의 반경을 돌아봅니다.</p>
           </article>
           <article class="feature-card">
-            <h3>여행 자동 묶음</h3>
-            <p>가까운 날짜와 장소의 사진을 이어 하나의 여행으로 정리합니다.</p>
+            <h3 data-i18n="f3t">여행 자동 묶음</h3>
+            <p data-i18n="f3d">가까운 날짜와 장소의 사진을 이어 하나의 여행으로 정리합니다.</p>
           </article>
           <article class="feature-card">
-            <h3>N년 전 오늘, 여기</h3>
-            <p>오늘과 같은 날, 이 장소에 남겨 둔 오래전 기억을 다시 건넵니다.</p>
+            <h3 data-i18n="f4t">N년 전 오늘, 여기</h3>
+            <p data-i18n="f4d">오늘과 같은 날, 이 장소에 남겨 둔 오래전 기억을 다시 건넵니다.</p>
           </article>
         </div>
       </div>
@@ -99,8 +105,8 @@
     <section class="privacy" aria-labelledby="privacy-title">
       <div class="privacy-inner">
         <p class="section-label">Private by design</p>
-        <h2 id="privacy-title">계정도, 서버도,<br>업로드도 없습니다.<br><strong>사진은 기기 밖으로<br>나가지 않습니다.</strong></h2>
-        <p>모든 분석은 당신의 기기 안에서만 이루어집니다. 가장 개인적인 기록은, 처음부터 끝까지 당신의 것으로 남습니다.</p>
+        <h2 id="privacy-title" data-i18n-html="privacyTitle">계정도, 서버도,<br>업로드도 없습니다.<br><strong>사진은 기기 밖으로<br>나가지 않습니다.</strong></h2>
+        <p data-i18n="privacyDesc">모든 분석은 당신의 기기 안에서만 이루어집니다. 가장 개인적인 기록은, 처음부터 끝까지 당신의 것으로 남습니다.</p>
       </div>
     </section>
   </main>
@@ -108,10 +114,80 @@
   <footer class="site-footer">
     <span>© 2026 Jinseop Bae</span>
     <div class="footer-links">
-      <a href="/here-then/privacy/">Privacy</a>
-      <a href="/here-then/terms/">Terms</a>
+      <a href="/here-then/privacy/" data-i18n="footPrivacy">개인정보처리방침</a>
+      <a href="/here-then/terms/" data-i18n="footTerms">이용약관</a>
       <a href="mailto:poxy1535@gmail.com">poxy1535@gmail.com</a>
     </div>
   </footer>
+
+  <script>
+  (function () {
+    var dict = {
+      ko: {
+        brand: "여기, 그때",
+        heroName: "여기, 그때",
+        heroNameSub: "Here, Then",
+        heroCopy: "사진은 앨범이 아니라,<br><em>살아온 장소</em>의 기록입니다.",
+        heroSub: "보관함을 기기 안에서만 분석해 당신이 어디에서 어떤 시간을 살아왔는지 지도 한 장에 펼칩니다.",
+        badge: "App Store에서 곧 만나요",
+        showcaseTitle: "흩어진 사진이<br>한 장의 지도가 됩니다.",
+        showcaseDesc: "어디에 머물렀고, 언제 다시 찾았는지. 장소와 시간 사이에 숨어 있던 나만의 이야기를 발견하세요.",
+        featuresTitle: "기억을 다시 만나는<br>네 가지 방법",
+        f1t: "기억 지도", f1d: "사진 속 위치를 모아 내가 살아온 장소를 지도 위에 펼칩니다.",
+        f2t: "시간 슬라이더", f2d: "연도와 기간을 움직이며 시간에 따라 달라진 나의 반경을 돌아봅니다.",
+        f3t: "여행 자동 묶음", f3d: "가까운 날짜와 장소의 사진을 이어 하나의 여행으로 정리합니다.",
+        f4t: "N년 전 오늘, 여기", f4d: "오늘과 같은 날, 이 장소에 남겨 둔 오래전 기억을 다시 건넵니다.",
+        privacyTitle: "계정도, 서버도,<br>업로드도 없습니다.<br><strong>사진은 기기 밖으로<br>나가지 않습니다.</strong>",
+        privacyDesc: "모든 분석은 당신의 기기 안에서만 이루어집니다. 가장 개인적인 기록은, 처음부터 끝까지 당신의 것으로 남습니다.",
+        footPrivacy: "개인정보처리방침", footTerms: "이용약관"
+      },
+      en: {
+        brand: "Here, Then",
+        heroName: "Here, Then",
+        heroNameSub: "여기, 그때",
+        heroCopy: "Photos aren't an album.<br>They're a record of <em>where you've lived</em>.",
+        heroSub: "Your library is analyzed entirely on your device and unfolds into a single map of where — and when — your life happened.",
+        badge: "Coming soon to the App Store",
+        showcaseTitle: "Scattered photos become<br>a single map.",
+        showcaseDesc: "Where you stayed, and when you came back. Discover the story hidden between places and time.",
+        featuresTitle: "Four ways to<br>meet your memories",
+        f1t: "Memory Map", f1d: "Every photo becomes a pin on the map. Tap one and that day's photos open right there.",
+        f2t: "Time Slider", f2d: "Drag the timeline and watch your map travel back through the years.",
+        f3t: "Journeys, automatically", f3d: "Days away from home fold themselves into trips — with routes and daily strips.",
+        f4t: "'N years ago, today'", f4d: "A quiet banner brings back this very day from years past.",
+        privacyTitle: "No account. No server.<br>No upload.<br><strong>Your photos never<br>leave your device.</strong>",
+        privacyDesc: "Everything happens on your device. The only exception is Apple's reverse geocoding that names your places. Your most personal record stays yours, start to finish.",
+        footPrivacy: "Privacy Policy", footTerms: "Terms of Use"
+      }
+    };
+
+    function apply(lang) {
+      var strings = dict[lang] || dict.ko;
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        var key = el.getAttribute("data-i18n");
+        if (strings[key]) el.textContent = strings[key];
+      });
+      document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+        var key = el.getAttribute("data-i18n-html");
+        if (strings[key]) el.innerHTML = strings[key];
+      });
+      document.documentElement.lang = lang;
+      document.querySelectorAll(".lang-toggle button").forEach(function (btn) {
+        btn.setAttribute("aria-pressed", String(btn.dataset.lang === lang));
+      });
+      try { localStorage.setItem("ht-lang", lang); } catch (e) {}
+    }
+
+    var saved = null;
+    try { saved = localStorage.getItem("ht-lang"); } catch (e) {}
+    var initial = saved || ((navigator.language || "").toLowerCase().indexOf("ko") === 0 ? "ko" : "en");
+    if (initial !== "ko") apply(initial);
+    else apply("ko");
+
+    document.querySelectorAll(".lang-toggle button").forEach(function (btn) {
+      btn.addEventListener("click", function () { apply(btn.dataset.lang); });
+    });
+  })();
+  </script>
 </body>
 </html>
