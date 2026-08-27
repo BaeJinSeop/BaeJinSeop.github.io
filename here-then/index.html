@@ -64,19 +64,19 @@
 
       <div class="phone-scroll" aria-label="여기, 그때 앱 화면 미리보기">
         <figure class="phone">
-          <img src="assets/01-map.jpg" alt="기억과 여행이 표시된 메인 지도 화면" width="899" height="1950" loading="lazy">
+          <img src="assets/screens/ko/01-map.jpg" data-shot="01-map" alt="기억과 여행이 표시된 메인 지도 화면" width="899" height="1950" loading="lazy">
         </figure>
         <figure class="phone">
-          <img src="assets/02-all-axis.jpg" alt="모든 시간대의 장소를 탐색하는 지도 화면" width="899" height="1950" loading="lazy">
+          <img src="assets/screens/ko/02-all-axis.jpg" data-shot="02-all-axis" alt="모든 시간대의 장소를 탐색하는 지도 화면" width="899" height="1950" loading="lazy">
         </figure>
         <figure class="phone">
-          <img src="assets/03-journey.jpg" alt="사진으로 자동 구성된 강릉 여행 화면" width="899" height="1950" loading="lazy">
+          <img src="assets/screens/ko/03-journey.jpg" data-shot="03-journey" alt="사진으로 자동 구성된 강릉 여행 화면" width="899" height="1950" loading="lazy">
         </figure>
         <figure class="phone">
-          <img src="assets/04-ranking.jpg" alt="자주 찾은 나의 장소 순위 화면" width="899" height="1950" loading="lazy">
+          <img src="assets/screens/ko/04-ranking.jpg" data-shot="04-ranking" alt="자주 찾은 나의 장소 순위 화면" width="899" height="1950" loading="lazy">
         </figure>
         <figure class="phone">
-          <img src="assets/05-grid.jpg" alt="한 장소에서 남긴 사진 모아보기 화면" width="899" height="1950" loading="lazy">
+          <img src="assets/screens/ko/05-grid.jpg" data-shot="05-grid" alt="한 장소에서 남긴 사진 모아보기 화면" width="899" height="1950" loading="lazy">
         </figure>
       </div>
     </section>
@@ -245,6 +245,10 @@
       document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
         var key = el.getAttribute("data-i18n-html");
         if (strings[key]) el.innerHTML = strings[key];
+      });
+      // 폰 프레임 속 스크린샷도 그 언어의 캡처로 갈아 끼운다.
+      document.querySelectorAll("[data-shot]").forEach(function (img) {
+        img.src = "assets/screens/" + lang + "/" + img.getAttribute("data-shot") + ".jpg";
       });
       document.documentElement.lang = lang;
       if (select) select.value = lang;
